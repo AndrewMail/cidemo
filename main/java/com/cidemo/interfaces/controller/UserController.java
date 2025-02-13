@@ -17,4 +17,9 @@ public class UserController {
         return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
     }
 
+    @GetMapping("/name")
+    public String name(){
+        return "John Doe";
+    }
+
 }
